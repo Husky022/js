@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Javascript </title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <h1>Hello Javascript</h1>
+        <script>
+
+        function calc(a, b){    
+            sum = a + b;
+            dif = a - b;
+            mult = a * b;
+            div = a / b;
+            alert("Сумма чисел: " + sum)
+            alert("Разность чисел: " + dif)
+            alert("Произведение: " + mult)
+            alert("Частное: " + div)                                   
+        }
+        
+        num1 = +prompt("Введите число a")
+        while(isNaN(num1)){
+			alert("Некорректный ввод, введите число");
+			num1 = +prompt("Введите число a");
+		}
+
+        num2 = +prompt("Введите число b")
+        while(isNaN(num2)){
+			alert("Некорректный ввод, введите число");
+			num2 = +prompt("Введите число b");
+		}
+
+        calc(num1, num2)
+
+
+        </script>
+    </body>
+</html>
