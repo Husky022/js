@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Javascript </title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <h1>Hello Javascript</h1>
+        <script>
+
+            function power(val, pow, res=1){               
+                if (pow < 1) {
+                    return res
+                } 
+                res *= val
+                pow -= 1
+                power(val, pow, res) 
+            }           
+            
+        num1 = +prompt("Введите число")
+        while(isNaN(num1)){
+			alert("Некорректный ввод, введите число");
+			num1 = +prompt("Введите число");
+		}
+
+        num2 = +prompt("Введите степень")
+        while(isNaN(num2)){
+			alert("Некорректный ввод, введите число");
+			num2 = +prompt("Введите степень");
+        }
+        
+        alert(power(num1, num2))
+
+
+        </script>
+    </body>
+</html>
