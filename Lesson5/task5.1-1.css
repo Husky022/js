@@ -1,0 +1,58 @@
+.container{
+    background: gray;
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 100px;
+    margin-left: 30%; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;    
+}
+
+.playingField{
+    background: white;
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;   
+    position: absolute; 
+    left: 50px;
+    top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;    
+}
+
+.aroundField{
+    background: brown;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;   
+    position: absolute; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    left: 50px; 
+    top: 50px;    
+}
+
+.cell{    
+    width: 50px;
+    height: 50px;      
+}
+
+.cellNumbers{
+    margin-top: 50px;    
+    width: 50px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;      
+}
+
+.cellLetters{ 
+    margin: 0 auto;   
+    width: 400px;
+    height: 50px;
+    display: flex;
+}

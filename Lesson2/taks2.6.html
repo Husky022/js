@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Javascript </title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <h1>Hello Javascript</h1>
+        <script>
+
+            function mathOperation(arg1, arg2, operation){    
+                switch (operation) {
+                    case "+":
+                        res = arg1 + arg2;
+                        return res;
+                    case "-":
+                        res = arg1 - arg2;
+                        return res;
+                    case "*":
+                        res = arg1 * arg2;
+                        return res;
+                    case "/":
+                        res = arg1 / arg2;
+                        return res;
+                }  
+            }           
+            
+        num1 = +prompt("Введите 1й аргумент")
+        while(isNaN(num1)){
+			alert("Некорректный ввод, введите число");
+			num1 = +prompt("Введите 1й аргумент");
+		}
+
+        num2 = +prompt("Введите 2й аргумент")
+        while(isNaN(num2)){
+			alert("Некорректный ввод, введите число");
+			num2 = +prompt("Введите 2й аргумент");
+        }
+        
+        oper = prompt("Введите операцию: +, -, *, /")
+        while(oper != "+" && oper != "-" && oper != "*" && oper != "/"){
+			alert("Некорректный ввод!");
+			oper = +prompt("Введите операцию: +, -, *, /");
+        }
+
+        
+
+
+        alert(mathOperation(num1, num2, oper))
+
+
+        </script>
+    </body>
+</html>
